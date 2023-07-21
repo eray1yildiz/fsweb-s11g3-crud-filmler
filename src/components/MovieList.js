@@ -4,7 +4,7 @@ import MovieListItem from "./MovieListItem";
 import MovieFooter from "./MovieFooter";
 import FavoriteMovieList from "./FavoriteMovieList";
 
-const MovieList = (props) => {
+const MovieList = props => {
   const { movies, favoriteMovies } = props;
 
   return (
@@ -22,7 +22,7 @@ const MovieList = (props) => {
           </thead>
 
           <tbody className="text-sm">
-            {movies.map((movie) => (
+            {movies.map(movie => (
               <MovieListItem key={movie.id} movie={movie} />
             ))}
           </tbody>
